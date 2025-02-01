@@ -1,30 +1,30 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738452731
-icon.svg::CompressedTexture2D::5866531943344257724::1738452477::1738452732::1::::<><>::
-tile_layers.gd::GDScript::-1::1738452477::0::1::::<>Node2D<>::
-town1.gltf::PackedScene::1553017515568689033::1738452477::1738452734::1::::<><>::
-town1.tscn::PackedScene::1562481386818046346::1738452477::0::1::::<><>::res://tile_layers.gd<>uid://cuteskuixbiv2::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://cie13gs3a824e::::res://Houses_Pack/houses.png<>uid://d4a7v8l7xfx4p::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png<>uid://drnewi2kg4y8r::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Plant.png<>uid://buua8wb17wyrl::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png<>res://scripts/shared/pathfinding_manager.gd<>uid://dbm4we2uqeqwa::::res://helper_art/black_square.png<>uid://b6i8hitkx6tn::::res://helper_art/white_square.jpg
-::res://helper_art/::1738452477
-16x16_alternating_squares.png::CompressedTexture2D::3322114547521034979::1738452477::1738452734::1::::<><>::
-black_square.png::CompressedTexture2D::7256023760755574156::1738452477::1738452732::1::::<><>::
-white_square.jpg::CompressedTexture2D::134729602054341959::1738452477::1738452732::1::::<><>::
-::res://Houses_Pack/::1738452477
-houses.png::CompressedTexture2D::5344238615768066898::1738452477::1738452732::1::::<><>::
-public-license.txt::TextFile::-1::1738452477::0::1::::<><>::
-::res://Pixel Art Top Down - Basic v1.1.2/::1738452477
-Changelog.txt::TextFile::-1::1738452477::0::1::::<><>::
-::res://Pixel Art Top Down - Basic v1.1.2/Texture/::1738452477
-TX Plant.png::CompressedTexture2D::8379591921525665691::1738452477::1738452732::1::::<><>::
-TX Player.png::CompressedTexture2D::4225750528630173227::1738452477::1738452732::1::::<><>::
-TX Props.png::CompressedTexture2D::3831545201017290205::1738452477::1738452732::1::::<><>::
-TX Shadow Plant.png::CompressedTexture2D::660381048770192246::1738452477::1738452732::1::::<><>::
-TX Shadow.png::CompressedTexture2D::1799607460812832737::1738452477::1738452732::1::::<><>::
-TX Struct.png::CompressedTexture2D::2155511863218145374::1738452477::1738452732::1::::<><>::
-TX Tileset Grass.png::CompressedTexture2D::6216116986259197693::1738452477::1738452732::1::::<><>::
-TX Tileset Stone Ground.png::CompressedTexture2D::9196720713771068701::1738452477::1738452732::1::::<><>::
-TX Tileset Wall.png::CompressedTexture2D::8839888760458969341::1738452477::1738452732::1::::<><>::
-::res://readmes/::1738452477
-tile_metadata.txt::TextFile::-1::1738452477::0::1::::<><>::
-::res://scripts/::1738452477
-::res://scripts/shared/::1738452477
-pathfinding_manager.gd::GDScript::-1::1738452477::0::1::::PathfindingManager<>Node2D<>::
+::res://::1738453121
+icon.svg::CompressedTexture2D::5866531943344257724::1738453087::1738453122::1::::<><>::
+tile_layers.gd::GDScript::-1::1738453087::0::1::::<>Node2D<>::
+town1.gltf::PackedScene::1553017515568689033::1738453087::1738453124::1::::<><>::
+town1.tscn::PackedScene::1562481386818046346::1738453087::0::1::::<><>::res://tile_layers.gd<>uid://cuteskuixbiv2::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://cie13gs3a824e::::res://Houses_Pack/houses.png<>uid://d4a7v8l7xfx4p::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png<>uid://drnewi2kg4y8r::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Plant.png<>uid://buua8wb17wyrl::::res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png<>res://scripts/shared/pathfinding_manager.gd<>uid://dbm4we2uqeqwa::::res://helper_art/black_square.png<>uid://b6i8hitkx6tn::::res://helper_art/white_square.jpg
+::res://helper_art/::1738453087
+16x16_alternating_squares.png::CompressedTexture2D::3322114547521034979::1738453087::1738453124::1::::<><>::
+black_square.png::CompressedTexture2D::7256023760755574156::1738453087::1738453122::1::::<><>::
+white_square.jpg::CompressedTexture2D::134729602054341959::1738453087::1738453122::1::::<><>::
+::res://Houses_Pack/::1738453087
+houses.png::CompressedTexture2D::5344238615768066898::1738453087::1738453122::1::::<><>::
+public-license.txt::TextFile::-1::1738453087::0::1::::<><>::
+::res://Pixel Art Top Down - Basic v1.1.2/::1738453087
+Changelog.txt::TextFile::-1::1738453087::0::1::::<><>::
+::res://Pixel Art Top Down - Basic v1.1.2/Texture/::1738453087
+TX Plant.png::CompressedTexture2D::8379591921525665691::1738453087::1738453122::1::::<><>::
+TX Player.png::CompressedTexture2D::4225750528630173227::1738453087::1738453122::1::::<><>::
+TX Props.png::CompressedTexture2D::3831545201017290205::1738453087::1738453122::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::660381048770192246::1738453087::1738453122::1::::<><>::
+TX Shadow.png::CompressedTexture2D::1799607460812832737::1738453087::1738453122::1::::<><>::
+TX Struct.png::CompressedTexture2D::2155511863218145374::1738453087::1738453122::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::6216116986259197693::1738453087::1738453122::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::9196720713771068701::1738453087::1738453122::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::8839888760458969341::1738453087::1738453122::1::::<><>::
+::res://readmes/::1738453087
+tile_metadata.txt::TextFile::-1::1738453087::0::1::::<><>::
+::res://scripts/::1738453087
+::res://scripts/shared/::1738453087
+pathfinding_manager.gd::GDScript::-1::1738453087::0::1::::PathfindingManager<>Node2D<>::
