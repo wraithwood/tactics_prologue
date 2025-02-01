@@ -1,0 +1,14 @@
+Tile metadata is what we will use to allow you to communicate the maps built to me
+so I can use a cell's properties when creating logic. 
+
+I will create a tileset specifically for marking properties of cell. You should be responsible
+for using it as a layer in your map building.
+
+I'm working on a semantic numbering convention to represent traversibility / other properties.
+We are limited a bit by the size of a 16x16 grid in what I can visually represent to you on the tile,
+but that is our only limitation. We can add as many properties as we like, technically, and I can
+consume them in the logic.
+
+Right now, I have prepared a very simple tileset where 1 is walkable, and 2 is not.
+
+= Justin
