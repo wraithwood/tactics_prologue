@@ -1,2 +1,6 @@
 res://town1.tscn
 res://generic_goblin.gd
+res://scripts/characters/generic_goblin.gd
+res://scripts/shared/pathfinding_manager.gd
+res://scripts/characters/soldier_ai.gd
+res://turn_manager.gd
