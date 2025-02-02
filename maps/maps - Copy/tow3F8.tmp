@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://wi43thvnmq63"]
+[gd_scene load_steps=35 format=4 uid="uid://wi43thvnmq63"]
 
 [ext_resource type="Script" path="res://scripts/levels/tile_layers.gd" id="1_6xail"]
 [ext_resource type="Texture2D" uid="uid://cuteskuixbiv2" path="res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png" id="1_vgc4t"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://dmmpwc034tcti" path="res://character_sprites/soldier/Soldier-Idle.png" id="12_lit56"]
 [ext_resource type="Script" path="res://scripts/characters/soldier_ai.gd" id="13_r4jvp"]
 [ext_resource type="Script" path="res://turn_manager.gd" id="14_qhdoc"]
+[ext_resource type="Script" path="res://scripts/shared/attack_menu_panel.gd" id="15_7ngn8"]
+[ext_resource type="Texture2D" uid="uid://j1mykjn7ihum" path="res://helper_art/arrow_set.jpg" id="15_a62nk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e656n"]
 texture = ExtResource("1_vgc4t")
@@ -4096,3 +4098,45 @@ script = ExtResource("13_r4jvp")
 
 [node name="TurnManager" type="Node2D" parent="."]
 script = ExtResource("14_qhdoc")
+
+[node name="AttackMenu" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="AttackMenu"]
+offset_left = 7.0
+offset_top = 994.0
+offset_right = 215.0
+offset_bottom = 1069.0
+script = ExtResource("15_7ngn8")
+
+[node name="AttackButton" type="Button" parent="AttackMenu/Panel"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 4.0
+offset_right = 131.0
+offset_bottom = 35.0
+text = "Attack"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="AttackMenu/Panel"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 1.0
+offset_right = 75.0
+offset_bottom = 41.0
+
+[node name="Sprite2D" type="Sprite2D" parent="AttackMenu/Panel/TextureRect"]
+position = Vector2(0, 17)
+scale = Vector2(0.192708, 0.211957)
+texture = ExtResource("15_a62nk")
+hframes = 3
+vframes = 3
+frame = 8
+
+[node name="Button" type="Button" parent="AttackMenu/Panel"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 38.0
+offset_right = 125.0
+offset_bottom = 69.0
+text = "Move"
+flat = true

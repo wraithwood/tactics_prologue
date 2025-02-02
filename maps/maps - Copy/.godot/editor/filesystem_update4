@@ -4,3 +4,8 @@ res://scripts/characters/generic_goblin.gd
 res://scripts/shared/pathfinding_manager.gd
 res://scripts/characters/soldier_ai.gd
 res://turn_manager.gd
+res://scripts/shared/attack_menu_panel.gd
+res://scripts/levels/tile_layers.gd
+res://level_scenes/town1.tscn
+res://scripts/characters/goblin/generic_goblin.gd
+res://scripts/characters/goblin/plan_movement_draw.gd
