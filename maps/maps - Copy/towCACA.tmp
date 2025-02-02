@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://wi43thvnmq63"]
+[gd_scene load_steps=32 format=4 uid="uid://wi43thvnmq63"]
 
 [ext_resource type="Script" path="res://scripts/levels/tile_layers.gd" id="1_6xail"]
 [ext_resource type="Texture2D" uid="uid://cuteskuixbiv2" path="res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png" id="1_vgc4t"]
@@ -13,7 +13,6 @@
 [ext_resource type="Script" path="res://scripts/characters/generic_goblin.gd" id="11_0yjtc"]
 [ext_resource type="Texture2D" uid="uid://dmmpwc034tcti" path="res://character_sprites/soldier/Soldier-Idle.png" id="12_lit56"]
 [ext_resource type="Script" path="res://scripts/characters/soldier_ai.gd" id="13_r4jvp"]
-[ext_resource type="Script" path="res://turn_manager.gd" id="14_qhdoc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e656n"]
 texture = ExtResource("1_vgc4t")
@@ -4093,6 +4092,3 @@ position = Vector2(66, 48)
 texture = ExtResource("12_lit56")
 hframes = 6
 script = ExtResource("13_r4jvp")
-
-[node name="TurnManager" type="Node2D" parent="."]
-script = ExtResource("14_qhdoc")

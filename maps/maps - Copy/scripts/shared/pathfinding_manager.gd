@@ -4,6 +4,7 @@ extends Node2D
 @onready var astar = AStar2D.new()
 @onready var grass_layer: TileMapLayer = $"/root/Main/TileLayers/Grass"
 @onready var pathfinding_layer: TileMapLayer = $"/root/Main/TileLayers/Pathfinding"
+const TILE_SIZE = Vector2(16, 16)
 
 func _ready():
 	 # Initialize the pathfinding grid based on the grass tilemap dimensions
@@ -21,7 +22,7 @@ func _ready():
 			_connect_neighbors(cell)
 			
 func _process(_delta: float):
-	print(find_path(Vector2i(0,0), Vector2i(1, 3)))
+	pass
 
 func is_cell_walkable(cell: Vector2i) -> bool:
 	# Check the pathfinding layer for walkability
@@ -56,3 +57,7 @@ func find_path(from: Vector2i, to: Vector2i) -> PackedVector2Array:
 	var start_id = _calculate_point_index(from)
 	var end_id = _calculate_point_index(to)
 	return astar.get_point_path(start_id, end_id)
+	
+func tile_size() -> Vector2:
+	return TILE_SIZE
+	
