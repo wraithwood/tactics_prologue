@@ -17,3 +17,4 @@ script_editor_cache.cfg
 project_metadata.cfg
 global_script_class_cache.cfg
 filesystem_cache8
+*.tmp

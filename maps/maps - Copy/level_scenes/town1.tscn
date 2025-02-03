@@ -1,6 +1,7 @@
-[gd_scene load_steps=36 format=4 uid="uid://wi43thvnmq63"]
+[gd_scene load_steps=37 format=4 uid="uid://wi43thvnmq63"]
 
 [ext_resource type="Script" path="res://scripts/levels/tile_layers.gd" id="1_n3edo"]
+[ext_resource type="Script" path="res://level_scenes/mouse_click_location.gd" id="1_o0jfo"]
 [ext_resource type="Texture2D" uid="uid://cuteskuixbiv2" path="res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png" id="2_hd8ek"]
 [ext_resource type="Texture2D" uid="uid://cie13gs3a824e" path="res://Houses_Pack/houses.png" id="3_4kvca"]
 [ext_resource type="Texture2D" uid="uid://d4a7v8l7xfx4p" path="res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png" id="4_0jaih"]
@@ -4042,9 +4043,11 @@ _data = {
 }
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_o0jfo")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(575, 323)
+visibility_layer = 3
+anchor_mode = 0
 zoom = Vector2(2.2, 2.2)
 
 [node name="TileLayers" type="Node2D" parent="."]
@@ -4081,7 +4084,7 @@ script = ExtResource("9_yddle")
 
 [node name="Goblin" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(522, 339)
+position = Vector2(121, 220)
 texture = ExtResource("10_1hiwp")
 hframes = 6
 script = ExtResource("11_cfgaa")

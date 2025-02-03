@@ -18,7 +18,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	if turn_manager.is_my_turn("goblin") and turn_manager.turn_phase == turn_manager.PLAN_MOVE_PHASE and not drawing_movement:
+	if turn_manager.is_my_turn("goblin") and turn_manager.turn_phase == turn_manager.PLAN_MOVE_PHASE:
+		print("DRAWING MOVEMENT RANGE TRIGGERED")
 		drawing_movement = true
 		plan_movement_renderer.draw_move_range()
 		# RIGHT HERE I WOULD LIKE TO DRAW semi transluscent green squares on all squares
@@ -93,5 +94,10 @@ func _update_movement(delta: float) -> void:
 				turn_manager.turn_is_complete("goblin")
 				
 				
-func current_position() -> Vector2:
+func current_position() -> Vector2i:
 	return tile_map_layer.local_to_map(global_position - pathfinding_manager.TILE_SIZE / 2)
+
+func draw_position() -> Vector2:
+	var pixel_position = position + Vector2(pathfinding_manager.TILE_SIZE /2, pathfinding_manager.TILE_SIZE / 2)
+	var canvas_transform = get_global_transform_with_canvas().affine_inverse()
+	return canvas_transform.basis_xform(pixel_position)
