@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://wi43thvnmq63"]
+[gd_scene load_steps=37 format=4 uid="uid://wi43thvnmq63"]
 
 [ext_resource type="Script" path="res://scripts/levels/tile_layers.gd" id="1_n3edo"]
 [ext_resource type="Texture2D" uid="uid://cuteskuixbiv2" path="res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png" id="2_hd8ek"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://scripts/characters/goblin/generic_goblin.gd" id="11_cfgaa"]
 [ext_resource type="Script" path="res://scripts/characters/goblin/plan_movement_draw.gd" id="12_lmaw1"]
 [ext_resource type="Texture2D" uid="uid://dmmpwc034tcti" path="res://character_sprites/soldier/Soldier-Idle.png" id="13_cwhxb"]
+[ext_resource type="PackedScene" uid="uid://by2ptb6s86ntm" path="res://scene/unit_move_menu.tscn" id="13_ghvsd"]
 [ext_resource type="Script" path="res://scripts/characters/soldier_ai.gd" id="14_bn5dr"]
 [ext_resource type="Script" path="res://scripts/shared/turn_manager.gd" id="15_4le8f"]
 [ext_resource type="Script" path="res://scripts/shared/attack_menu_panel.gd" id="16_q7yfp"]
@@ -4094,6 +4095,8 @@ libraries = {
 [node name="PlanMovementDraw" type="Node2D" parent="Goblin"]
 z_index = 500
 script = ExtResource("12_lmaw1")
+
+[node name="unit_move_menu" parent="Goblin" instance=ExtResource("13_ghvsd")]
 
 [node name="Soldier" type="Sprite2D" parent="."]
 position = Vector2(66, 48)
