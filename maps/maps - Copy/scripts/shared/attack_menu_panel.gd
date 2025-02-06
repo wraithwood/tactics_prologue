@@ -2,7 +2,6 @@ extends Control
 
 @onready var options = [$AttackButton, $Button]
 @onready var arrow = $TextureRect
-@onready var turn_manager = $"../../TurnManager"
 
 var current_index = 0
 
@@ -13,7 +12,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	if turn_manager.turn_phase == turn_manager.MENU_ROOT_PHASE:
+	if TurnManager.turn_phase == TurnManager.MENU_ROOT_PHASE:
 		if options[0].button_pressed:
 			current_index = 0
 			_on_move_button_pressed()
@@ -65,4 +64,4 @@ func _select_option() -> void:
 			
 			
 func _on_move_button_pressed() -> void:
-	turn_manager.enter_plan_move_phase()
+	TurnManager.turn_phase = TurnManager.PLAN_MOVE_PHASE

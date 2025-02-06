@@ -21,5 +21,6 @@ func _ready() -> void:
 
 
 func _on_button_pressed(direction: Enums.Direction) -> void:
+	print(direction)
 	# Make sure to notify whoever is subscribed to the `player_move` signal that a move button was pressed.
 	player_move.emit(direction)

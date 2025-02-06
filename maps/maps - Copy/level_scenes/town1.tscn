@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://wi43thvnmq63"]
+[gd_scene load_steps=38 format=4 uid="uid://wi43thvnmq63"]
 
 [ext_resource type="Script" path="res://scripts/levels/tile_layers.gd" id="1_n3edo"]
 [ext_resource type="Script" path="res://level_scenes/mouse_click_location.gd" id="1_o0jfo"]
@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://b6i8hitkx6tn" path="res://helper_art/white_square.jpg" id="8_2awrd"]
 [ext_resource type="Script" path="res://scripts/shared/pathfinding_manager.gd" id="9_yddle"]
 [ext_resource type="Texture2D" uid="uid://cj322ncyny263" path="res://character_sprites/orc/Orc-Idle.png" id="10_1hiwp"]
-[ext_resource type="Script" path="res://scripts/characters/goblin/generic_goblin.gd" id="11_cfgaa"]
 [ext_resource type="Script" path="res://scripts/characters/goblin/plan_movement_draw.gd" id="12_lmaw1"]
+[ext_resource type="Script" path="res://scripts/characters/goblin/goblin.gd" id="12_m6j56"]
 [ext_resource type="Texture2D" uid="uid://dmmpwc034tcti" path="res://character_sprites/soldier/Soldier-Idle.png" id="13_cwhxb"]
 [ext_resource type="PackedScene" uid="uid://by2ptb6s86ntm" path="res://scene/unit_move_menu.tscn" id="13_ghvsd"]
 [ext_resource type="Script" path="res://scripts/characters/soldier_ai.gd" id="14_bn5dr"]
@@ -4085,10 +4085,9 @@ script = ExtResource("9_yddle")
 
 [node name="Goblin" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(121, 220)
 texture = ExtResource("10_1hiwp")
 hframes = 6
-script = ExtResource("11_cfgaa")
+script = ExtResource("12_m6j56")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Goblin"]
 libraries = {
