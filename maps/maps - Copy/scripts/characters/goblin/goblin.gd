@@ -6,6 +6,13 @@ extends BaseCharacterController
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	UNIQUE_NAME = "goblin"
+	stats = {
+		"hp": 36,
+		"mana": 13,
+		"strength": 6,
+		"intelligence": 5,
+		"speed": 4
+	}
 	TurnManager.register_character(UNIQUE_NAME, true)
 	var pf_registered = PathfindingManager.register_character(self, Vector2i(15, 15))
 	if pf_registered:

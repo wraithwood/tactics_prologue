@@ -58,10 +58,14 @@ func _update_arrow_position() -> void:
 func _select_option() -> void:
 	match current_index:
 		0:
-			print("Attack Selected")
+			_on_attack_button_pressed()
 		1:
 			_on_move_button_pressed()
 			
 			
 func _on_move_button_pressed() -> void:
 	TurnManager.turn_phase = TurnManager.PLAN_MOVE_PHASE
+	
+
+func _on_attack_button_pressed() -> void:
+	TurnManager.turn_phase = TurnManager.ATTACK_PHASE

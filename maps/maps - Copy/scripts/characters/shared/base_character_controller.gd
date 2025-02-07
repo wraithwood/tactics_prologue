@@ -67,3 +67,10 @@ func update_movement_dangerous() -> void:
 			is_initial_move_to_correct_draw = false
 			TurnManager.turn_phase = TurnManager.MENU_ROOT_PHASE
 			drawing_movement = false
+			
+			
+func phys_attack(weapon_min: int, weapon_max: int) -> int:
+	var raw_weapon_dmg: float = randf_range(weapon_min, weapon_max)
+	var after_strength_bonus: float = raw_weapon_dmg * (1 + stats.strength / 10.0)
+	var after_global_variance: float = after_strength_bonus * (1 + (randi_range(10,20) / 100.0))
+	return round(after_global_variance)

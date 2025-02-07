@@ -10,6 +10,7 @@ const MENU_ROOT_PHASE: int = 0
 const PLAN_MOVE_PHASE: int = 1 
 const ATTACK_PHASE: int = 2
 const MOVE_PHASE: int = 3
+const PLAN_ATTACK_PHASE: int = 4
 const ACT: int = 5
 
 # IF PLAYER CHARACTER, SET TURN PHASE TO 0 INITIALLY
